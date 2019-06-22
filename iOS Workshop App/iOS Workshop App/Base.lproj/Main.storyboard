@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,21 +15,19 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_Workshop_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="architecture-building-castle-1590882" translatesAutoresizingMaskIntoConstraints="NO" id="WTk-kA-ZbL">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="iOS Testing Workshop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TX-yX-sL4">
-                                <rect key="frame" x="47" y="41" width="320.5" height="29"/>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="28"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVX-8L-RjQ">
-                                <rect key="frame" x="106" y="299" width="202" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVX-8L-RjQ">
+                                <rect key="frame" x="50.666666666666657" y="272" width="274" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="FDx-og-2Th"/>
+                                    <constraint firstAttribute="width" constant="274" id="uwx-f0-qe3"/>
+                                </constraints>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Show me a picture of a castle">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -37,26 +35,36 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJj-eL-g39">
-                                <rect key="frame" x="111.5" y="169" width="191" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="50.666666666666657" y="136" width="274" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="3uD-Ic-YDp"/>
+                                    <constraint firstAttribute="height" constant="36" id="B7F-cd-Wpf"/>
+                                </constraints>
                                 <state key="normal" title="Write something silly for me">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Testing Workshop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TX-yX-sL4">
+                                <rect key="frame" x="27" y="60" width="321" height="29"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="3TX-yX-sL4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="36u-Rp-ZXz"/>
-                            <constraint firstItem="jJj-eL-g39" firstAttribute="top" secondItem="3TX-yX-sL4" secondAttribute="bottom" constant="100" id="3A3-Ae-gE8"/>
                             <constraint firstItem="UVX-8L-RjQ" firstAttribute="top" secondItem="jJj-eL-g39" secondAttribute="bottom" constant="100" id="7Yp-4U-tRm"/>
-                            <constraint firstItem="3TX-yX-sL4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-393.5" id="9BW-sJ-OMx"/>
                             <constraint firstAttribute="bottom" secondItem="WTk-kA-ZbL" secondAttribute="bottom" id="ROB-RG-kR8"/>
                             <constraint firstItem="WTk-kA-ZbL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Tlv-h1-g7B"/>
+                            <constraint firstItem="jJj-eL-g39" firstAttribute="top" secondItem="3TX-yX-sL4" secondAttribute="bottom" constant="47" id="agZ-JY-NEY"/>
                             <constraint firstItem="jJj-eL-g39" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="byR-mC-8dU"/>
                             <constraint firstItem="UVX-8L-RjQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cjB-0b-ewR"/>
                             <constraint firstItem="WTk-kA-ZbL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kU3-DC-CkH"/>
                             <constraint firstAttribute="trailing" secondItem="WTk-kA-ZbL" secondAttribute="trailing" id="kd6-vb-Aas"/>
+                            <constraint firstItem="3TX-yX-sL4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="60" id="qhY-zz-AIa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
