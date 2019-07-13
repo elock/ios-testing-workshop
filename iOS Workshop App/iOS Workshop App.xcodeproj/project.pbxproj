@@ -431,7 +431,6 @@
 		8C8AF98522BB371300517C9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "iOS Workshop App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -448,7 +447,6 @@
 		8C8AF98622BB371300517C9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "iOS Workshop App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

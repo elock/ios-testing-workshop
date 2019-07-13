@@ -57,6 +57,7 @@
                         <constraints>
                             <constraint firstItem="3TX-yX-sL4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="36u-Rp-ZXz"/>
                             <constraint firstItem="UVX-8L-RjQ" firstAttribute="top" secondItem="jJj-eL-g39" secondAttribute="bottom" constant="100" id="7Yp-4U-tRm"/>
+                            <constraint firstItem="WTk-kA-ZbL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lb4-gI-Xga"/>
                             <constraint firstAttribute="bottom" secondItem="WTk-kA-ZbL" secondAttribute="bottom" id="ROB-RG-kR8"/>
                             <constraint firstItem="WTk-kA-ZbL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Tlv-h1-g7B"/>
                             <constraint firstItem="jJj-eL-g39" firstAttribute="top" secondItem="3TX-yX-sL4" secondAttribute="bottom" constant="47" id="agZ-JY-NEY"/>
@@ -64,6 +65,7 @@
                             <constraint firstItem="UVX-8L-RjQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cjB-0b-ewR"/>
                             <constraint firstItem="WTk-kA-ZbL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kU3-DC-CkH"/>
                             <constraint firstAttribute="trailing" secondItem="WTk-kA-ZbL" secondAttribute="trailing" id="kd6-vb-Aas"/>
+                            <constraint firstAttribute="trailing" secondItem="WTk-kA-ZbL" secondAttribute="trailing" id="oov-VV-gAC"/>
                             <constraint firstItem="3TX-yX-sL4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="60" id="qhY-zz-AIa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
