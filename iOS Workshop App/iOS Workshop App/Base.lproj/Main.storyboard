@@ -41,7 +41,7 @@
                                     <constraint firstAttribute="width" constant="274" id="3uD-Ic-YDp"/>
                                     <constraint firstAttribute="height" constant="36" id="B7F-cd-Wpf"/>
                                 </constraints>
-                                <state key="normal" title="Write something silly for me">
+                                <state key="normal" title="Dragon Ad Lib">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -70,6 +70,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="ShowCastlePic" destination="UVX-8L-RjQ" id="qC8-MK-6N0"/>
+                        <outlet property="ShowTextEntry" destination="jJj-eL-g39" id="XvU-Yc-MP6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
