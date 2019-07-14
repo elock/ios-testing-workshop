@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,14 +15,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_Workshop_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="architecture-building-castle-1590882" translatesAutoresizingMaskIntoConstraints="NO" id="WTk-kA-ZbL">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVX-8L-RjQ">
-                                <rect key="frame" x="50.666666666666657" y="272" width="274" height="36"/>
+                                <rect key="frame" x="70" y="272" width="274" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="FDx-og-2Th"/>
@@ -38,7 +38,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJj-eL-g39">
-                                <rect key="frame" x="50.666666666666657" y="136" width="274" height="36"/>
+                                <rect key="frame" x="70" y="136" width="274" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="274" id="3uD-Ic-YDp"/>
@@ -53,9 +53,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Testing Workshop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TX-yX-sL4">
-                                <rect key="frame" x="27" y="60" width="321" height="29"/>
+                                <rect key="frame" x="46.666666666666657" y="60" width="321" height="29"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="28"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -90,9 +90,30 @@
             <objects>
                 <viewController id="mEz-cO-yHm" customClass="CastlePics" customModule="iOS_Workshop_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lWh-Iz-MwG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nm4-d0-cyf">
+                                <rect key="frame" x="70" y="796" width="274" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="iab-nM-RzJ"/>
+                                    <constraint firstAttribute="width" constant="274" id="kkl-z9-dCI"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="partialCurl" id="B0O-d6-LPI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49390608070000003" green="0.48637026550000001" blue="0.43724346159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nm4-d0-cyf" firstAttribute="centerX" secondItem="lWh-Iz-MwG" secondAttribute="centerX" id="1Ov-2j-UTg"/>
+                            <constraint firstItem="GT6-Mb-YCq" firstAttribute="bottom" secondItem="Nm4-d0-cyf" secondAttribute="bottom" constant="30" id="uGM-1W-eOM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="GT6-Mb-YCq"/>
                     </view>
                 </viewController>
@@ -105,18 +126,120 @@
             <objects>
                 <viewController id="1U2-iG-6yf" customClass="DragonAdLib" customModule="iOS_Workshop_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xom-p8-NWi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlf-PM-KPc">
+                                <rect key="frame" x="70" y="796" width="274" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="a9I-o0-T9z"/>
+                                    <constraint firstAttribute="height" constant="36" id="y02-Jc-yQz"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="partialCurl" id="Pfe-9V-63k"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provide a verb..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hr0-Ty-A0B">
+                                <rect key="frame" x="81.666666666666686" y="124" width="251" height="31"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L8w-ei-nG9">
+                                <rect key="frame" x="69" y="215" width="276" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="j2M-bf-zha"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...And a noun." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kF0-Uq-177">
+                                <rect key="frame" x="102.66666666666669" y="305" width="209" height="31"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rl4-kp-B83">
+                                <rect key="frame" x="70" y="498" width="274" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="8eO-tI-P52"/>
+                                    <constraint firstAttribute="height" constant="36" id="rFc-FY-aeI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
+                                <state key="normal" title="Slay the Dragon!">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mto-Wh-koA">
+                                <rect key="frame" x="69" y="396" width="276" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="0Eg-KW-dJp"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49390608072280884" green="0.4863702654838562" blue="0.43724346160888672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="L8w-ei-nG9" firstAttribute="centerX" secondItem="Xom-p8-NWi" secondAttribute="centerX" id="52b-l4-0J7"/>
+                            <constraint firstItem="kF0-Uq-177" firstAttribute="top" secondItem="L8w-ei-nG9" secondAttribute="bottom" constant="60" id="74c-qW-ETZ"/>
+                            <constraint firstItem="Mto-Wh-koA" firstAttribute="top" secondItem="kF0-Uq-177" secondAttribute="bottom" constant="60" id="8Ah-3f-em5"/>
+                            <constraint firstItem="rl4-kp-B83" firstAttribute="top" secondItem="Mto-Wh-koA" secondAttribute="bottom" constant="72" id="9DW-Jm-sxm"/>
+                            <constraint firstItem="L8w-ei-nG9" firstAttribute="top" secondItem="Hr0-Ty-A0B" secondAttribute="bottom" constant="60" id="BuF-Qv-9TS"/>
+                            <constraint firstItem="Hr0-Ty-A0B" firstAttribute="top" secondItem="qbU-po-ABw" secondAttribute="top" constant="80" id="Jh8-MV-bTK"/>
+                            <constraint firstItem="Mto-Wh-koA" firstAttribute="centerX" secondItem="Xom-p8-NWi" secondAttribute="centerX" id="LkL-xg-SzE"/>
+                            <constraint firstItem="Hr0-Ty-A0B" firstAttribute="centerX" secondItem="Xom-p8-NWi" secondAttribute="centerX" id="fhU-ir-Dyr"/>
+                            <constraint firstItem="rl4-kp-B83" firstAttribute="centerX" secondItem="Xom-p8-NWi" secondAttribute="centerX" id="fmu-Tu-Hc4"/>
+                            <constraint firstItem="kF0-Uq-177" firstAttribute="centerX" secondItem="Xom-p8-NWi" secondAttribute="centerX" id="ggN-SQ-HUl"/>
+                            <constraint firstItem="Tlf-PM-KPc" firstAttribute="centerX" secondItem="Xom-p8-NWi" secondAttribute="centerX" id="lX5-0d-ALC"/>
+                            <constraint firstItem="qbU-po-ABw" firstAttribute="bottom" secondItem="Tlf-PM-KPc" secondAttribute="bottom" constant="30" id="xTh-Pz-4Ni"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qbU-po-ABw"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RkM-jo-yna" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="-22"/>
+            <point key="canvasLocation" x="1044.9275362318842" y="-22.098214285714285"/>
+        </scene>
+        <!--Ad Lib Modal-->
+        <scene sceneID="bLm-5w-lND">
+            <objects>
+                <viewController id="H7x-G4-2sU" customClass="AdLibModal" customModule="iOS_Workshop_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EJW-Qd-YyN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="isS-oS-A6c">
+                                <rect key="frame" x="40" y="273" width="335" height="351"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49390608070000003" green="0.48637026550000001" blue="0.43724346159999999" alpha="0.86424405809859151" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="isS-oS-A6c" firstAttribute="centerX" secondItem="EJW-Qd-YyN" secondAttribute="centerX" id="kqZ-wQ-V9n"/>
+                            <constraint firstItem="isS-oS-A6c" firstAttribute="centerY" secondItem="EJW-Qd-YyN" secondAttribute="centerY" id="w30-C3-d20"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ylV-7u-RNe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xmq-UT-CA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1711.5942028985507" y="16.741071428571427"/>
         </scene>
     </scenes>
     <resources>
         <image name="architecture-building-castle-1590882" width="1920" height="2560"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Pfe-9V-63k"/>
+    </inferredMetricsTieBreakers>
 </document>

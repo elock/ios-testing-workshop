@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DB77BA922DBA87800F2611F /* AdLibModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB77BA822DBA87800F2611F /* AdLibModal.swift */; };
 		7DFD0B8E22DAD89F00E2AF00 /* DragonAdLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFD0B8D22DAD89F00E2AF00 /* DragonAdLib.swift */; };
 		7DFD0B9022DAD8BC00E2AF00 /* CastlePics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFD0B8F22DAD8BC00E2AF00 /* CastlePics.swift */; };
 		8C8AF96022BB371100517C9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8AF95F22BB371100517C9F /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7DB77BA822DBA87800F2611F /* AdLibModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdLibModal.swift; sourceTree = "<group>"; };
 		7DFD0B8D22DAD89F00E2AF00 /* DragonAdLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonAdLib.swift; sourceTree = "<group>"; };
 		7DFD0B8F22DAD8BC00E2AF00 /* CastlePics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastlePics.swift; sourceTree = "<group>"; };
 		8C8AF95C22BB371100517C9F /* iOS Workshop App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Workshop App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +106,7 @@
 				8C8AF95F22BB371100517C9F /* AppDelegate.swift */,
 				8C8AF96122BB371100517C9F /* ViewController.swift */,
 				8C8AF96322BB371100517C9F /* Main.storyboard */,
+				7DB77BA822DBA87800F2611F /* AdLibModal.swift */,
 				7DFD0B8D22DAD89F00E2AF00 /* DragonAdLib.swift */,
 				7DFD0B8F22DAD8BC00E2AF00 /* CastlePics.swift */,
 				8C8AF96622BB371300517C9F /* Assets.xcassets */,
@@ -264,6 +267,7 @@
 			files = (
 				7DFD0B8E22DAD89F00E2AF00 /* DragonAdLib.swift in Sources */,
 				8C8AF96222BB371100517C9F /* ViewController.swift in Sources */,
+				7DB77BA922DBA87800F2611F /* AdLibModal.swift in Sources */,
 				7DFD0B9022DAD8BC00E2AF00 /* CastlePics.swift in Sources */,
 				8C8AF96022BB371100517C9F /* AppDelegate.swift in Sources */,
 			);
