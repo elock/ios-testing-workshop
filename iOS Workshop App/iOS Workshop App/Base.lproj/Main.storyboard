@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_Workshop_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="architecture-building-castle-1590882" translatesAutoresizingMaskIntoConstraints="NO" id="WTk-kA-ZbL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVX-8L-RjQ">
+                                <rect key="frame" x="70" y="272" width="274" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="FDx-og-2Th"/>
+                                    <constraint firstAttribute="width" constant="274" id="uwx-f0-qe3"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Show me a picture of a castle">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mEz-cO-yHm" kind="show" id="p4y-yU-g3L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJj-eL-g39">
+                                <rect key="frame" x="70" y="136" width="274" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="3uD-Ic-YDp"/>
+                                    <constraint firstAttribute="height" constant="36" id="B7F-cd-Wpf"/>
+                                </constraints>
+                                <state key="normal" title="Dragon Ad Lib">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1U2-iG-6yf" kind="show" id="dd5-D7-Kt3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Testing Workshop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TX-yX-sL4">
+                                <rect key="frame" x="46.666666666666657" y="60" width="321" height="29"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3TX-yX-sL4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="36u-Rp-ZXz"/>
+                            <constraint firstItem="UVX-8L-RjQ" firstAttribute="top" secondItem="jJj-eL-g39" secondAttribute="bottom" constant="100" id="7Yp-4U-tRm"/>
+                            <constraint firstItem="WTk-kA-ZbL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lb4-gI-Xga"/>
+                            <constraint firstAttribute="bottom" secondItem="WTk-kA-ZbL" secondAttribute="bottom" id="ROB-RG-kR8"/>
+                            <constraint firstItem="WTk-kA-ZbL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Tlv-h1-g7B"/>
+                            <constraint firstItem="jJj-eL-g39" firstAttribute="top" secondItem="3TX-yX-sL4" secondAttribute="bottom" constant="47" id="agZ-JY-NEY"/>
+                            <constraint firstItem="jJj-eL-g39" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="byR-mC-8dU"/>
+                            <constraint firstItem="UVX-8L-RjQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cjB-0b-ewR"/>
+                            <constraint firstItem="WTk-kA-ZbL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kU3-DC-CkH"/>
+                            <constraint firstAttribute="trailing" secondItem="WTk-kA-ZbL" secondAttribute="trailing" id="kd6-vb-Aas"/>
+                            <constraint firstAttribute="trailing" secondItem="WTk-kA-ZbL" secondAttribute="trailing" id="oov-VV-gAC"/>
+                            <constraint firstItem="3TX-yX-sL4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="60" id="qhY-zz-AIa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ShowCastlePic" destination="UVX-8L-RjQ" id="qC8-MK-6N0"/>
+                        <outlet property="ShowTextEntry" destination="jJj-eL-g39" id="XvU-Yc-MP6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Castle Pics-->
+        <scene sceneID="jQU-FL-ZAG">
+            <objects>
+                <viewController id="mEz-cO-yHm" customClass="CastlePics" customModule="iOS_Workshop_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lWh-Iz-MwG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nm4-d0-cyf">
+                                <rect key="frame" x="70" y="796" width="274" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="iab-nM-RzJ"/>
+                                    <constraint firstAttribute="width" constant="274" id="kkl-z9-dCI"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="partialCurl" id="B0O-d6-LPI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49390608070000003" green="0.48637026550000001" blue="0.43724346159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nm4-d0-cyf" firstAttribute="centerX" secondItem="lWh-Iz-MwG" secondAttribute="centerX" id="1Ov-2j-UTg"/>
+                            <constraint firstItem="GT6-Mb-YCq" firstAttribute="bottom" secondItem="Nm4-d0-cyf" secondAttribute="bottom" constant="30" id="uGM-1W-eOM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GT6-Mb-YCq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEA-Dc-stG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044" y="642"/>
+        </scene>
+        <!--Dragon Ad Lib-->
+        <scene sceneID="tOC-wP-F1C">
+            <objects>
+                <viewController id="1U2-iG-6yf" customClass="DragonAdLib" customModule="iOS_Workshop_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xom-p8-NWi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlf-PM-KPc">
+                                <rect key="frame" x="70" y="796" width="274" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="a9I-o0-T9z"/>
+                                    <constraint firstAttribute="height" constant="36" id="y02-Jc-yQz"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="partialCurl" id="Pfe-9V-63k"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provide a verb..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hr0-Ty-A0B">
+                                <rect key="frame" x="81.666666666666686" y="124" width="251" height="31"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="fight, for example" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L8w-ei-nG9">
+                                <rect key="frame" x="69" y="215" width="276" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="j2M-bf-zha"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...And a noun." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kF0-Uq-177">
+                                <rect key="frame" x="102.66666666666669" y="305" width="209" height="31"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rl4-kp-B83">
+                                <rect key="frame" x="70" y="498" width="274" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="8eO-tI-P52"/>
+                                    <constraint firstAttribute="height" constant="36" id="rFc-FY-aeI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
+                                <state key="normal" title="Slay the Dragon!">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="openCreatedAdLib:" destination="1U2-iG-6yf" eventType="touchUpInside" id="Z67-1c-DB1"/>
+                                    <segue destination="Zmo-S3-4NJ" kind="presentation" modalPresentationStyle="overCurrentContext" id="DL1-2m-n6G"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="brain, for example" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mto-Wh-koA">
+                                <rect key="frame" x="69" y="396" width="276" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="0Eg-KW-dJp"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49390608072280884" green="0.4863702654838562" blue="0.43724346160888672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="L8w-ei-nG9" firstAttribute="centerX" secondItem="Xom-p8-NWi" secondAttribute="centerX" id="52b-l4-0J7"/>
+                            <constraint firstItem="kF0-Uq-177" firstAttribute="top" secondItem="L8w-ei-nG9" secondAttribute="bottom" constant="60" id="74c-qW-ETZ"/>
+                            <constraint firstItem="Mto-Wh-koA" firstAttribute="top" secondItem="kF0-Uq-177" secondAttribute="bottom" constant="60" id="8Ah-3f-em5"/>
+                            <constraint firstItem="rl4-kp-B83" firstAttribute="top" secondItem="Mto-Wh-koA" secondAttribute="bottom" constant="72" id="9DW-Jm-sxm"/>
+                            <constraint firstItem="L8w-ei-nG9" firstAttribute="top" secondItem="Hr0-Ty-A0B" secondAttribute="bottom" constant="60" id="BuF-Qv-9TS"/>
+                            <constraint firstItem="Hr0-Ty-A0B" firstAttribute="top" secondItem="qbU-po-ABw" secondAttribute="top" constant="80" id="Jh8-MV-bTK"/>
+                            <constraint firstItem="Mto-Wh-koA" firstAttribute="centerX" secondItem="Xom-p8-NWi" secondAttribute="centerX" id="LkL-xg-SzE"/>
+                            <constraint firstItem="Hr0-Ty-A0B" firstAttribute="centerX" secondItem="Xom-p8-NWi" secondAttribute="centerX" id="fhU-ir-Dyr"/>
+                            <constraint firstItem="rl4-kp-B83" firstAttribute="centerX" secondItem="Xom-p8-NWi" secondAttribute="centerX" id="fmu-Tu-Hc4"/>
+                            <constraint firstItem="kF0-Uq-177" firstAttribute="centerX" secondItem="Xom-p8-NWi" secondAttribute="centerX" id="ggN-SQ-HUl"/>
+                            <constraint firstItem="Tlf-PM-KPc" firstAttribute="centerX" secondItem="Xom-p8-NWi" secondAttribute="centerX" id="lX5-0d-ALC"/>
+                            <constraint firstItem="qbU-po-ABw" firstAttribute="bottom" secondItem="Tlf-PM-KPc" secondAttribute="bottom" constant="30" id="xTh-Pz-4Ni"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qbU-po-ABw"/>
+                    </view>
+                    <connections>
+                        <outlet property="nounLabel" destination="kF0-Uq-177" id="OqM-IC-Mry"/>
+                        <outlet property="nounTextField" destination="Mto-Wh-koA" id="Bkf-QZ-tar"/>
+                        <outlet property="openCreatedAdLibButton" destination="rl4-kp-B83" id="cU8-ZR-kHm"/>
+                        <outlet property="verbLabel" destination="Hr0-Ty-A0B" id="H9d-2i-4JY"/>
+                        <outlet property="verbTextField" destination="L8w-ei-nG9" id="AKg-c8-vxs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RkM-jo-yna" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044.9275362318842" y="-22.098214285714285"/>
+        </scene>
+        <!--Ad Lib Modal-->
+        <scene sceneID="mJx-9W-CV9">
+            <objects>
+                <viewController id="Zmo-S3-4NJ" customClass="AdLibModal" customModule="iOS_Workshop_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JLE-dy-JKZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8F3-tR-NhZ">
+                                <rect key="frame" x="70" y="315" width="274" height="234"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="KyB-Ru-Vyk"/>
+                                    <constraint firstAttribute="height" constant="234" id="Ujy-Id-e0v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLU-XA-zLs">
+                                <rect key="frame" x="70" y="568" width="274" height="36"/>
+                                <color key="backgroundColor" red="0.49390608070000003" green="0.48637026550000001" blue="0.43724346159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="KIe-3M-0g6"/>
+                                    <constraint firstAttribute="height" constant="36" id="bbx-xw-4A1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="30"/>
+                                <state key="normal" title="Indeed!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeModal:" destination="Zmo-S3-4NJ" eventType="touchUpInside" id="x5R-En-XgC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wLU-XA-zLs" firstAttribute="centerX" secondItem="JLE-dy-JKZ" secondAttribute="centerX" id="bWA-TN-s5j"/>
+                            <constraint firstItem="8F3-tR-NhZ" firstAttribute="centerY" secondItem="JLE-dy-JKZ" secondAttribute="centerY" constant="-16" id="eXr-96-hMV"/>
+                            <constraint firstItem="8F3-tR-NhZ" firstAttribute="centerX" secondItem="JLE-dy-JKZ" secondAttribute="centerX" id="qoQ-9q-OuY"/>
+                            <constraint firstItem="wLU-XA-zLs" firstAttribute="top" secondItem="8F3-tR-NhZ" secondAttribute="bottom" constant="19" id="tbU-Cv-Eth"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zBM-Wa-Gm1"/>
+                    </view>
+                    <connections>
+                        <outlet property="Label" destination="8F3-tR-NhZ" id="zcE-t4-13M"/>
+                        <outlet property="closeButton" destination="wLU-XA-zLs" id="J8P-Ss-WhO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vdh-mr-TUD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1915.9420289855075" y="-29.464285714285712"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="architecture-building-castle-1590882" width="1920" height="2560"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Pfe-9V-63k"/>
+    </inferredMetricsTieBreakers>
+</document>
