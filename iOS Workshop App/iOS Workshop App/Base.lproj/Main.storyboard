@@ -177,6 +177,10 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="openCreatedAdLib:" destination="1U2-iG-6yf" eventType="touchUpInside" id="Z67-1c-DB1"/>
+                                    <segue destination="Zmo-S3-4NJ" kind="presentation" modalPresentationStyle="overCurrentContext" id="DL1-2m-n6G"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mto-Wh-koA">
                                 <rect key="frame" x="69" y="396" width="276" height="30"/>
@@ -205,35 +209,56 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qbU-po-ABw"/>
                     </view>
+                    <connections>
+                        <outlet property="nounLabel" destination="kF0-Uq-177" id="OqM-IC-Mry"/>
+                        <outlet property="nounTextField" destination="Mto-Wh-koA" id="Bkf-QZ-tar"/>
+                        <outlet property="openCreatedAdLibButton" destination="rl4-kp-B83" id="cU8-ZR-kHm"/>
+                        <outlet property="verbLabel" destination="Hr0-Ty-A0B" id="H9d-2i-4JY"/>
+                        <outlet property="verbTextField" destination="L8w-ei-nG9" id="AKg-c8-vxs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RkM-jo-yna" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1044.9275362318842" y="-22.098214285714285"/>
         </scene>
         <!--Ad Lib Modal-->
-        <scene sceneID="bLm-5w-lND">
+        <scene sceneID="mJx-9W-CV9">
             <objects>
-                <viewController id="H7x-G4-2sU" customClass="AdLibModal" customModule="iOS_Workshop_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="EJW-Qd-YyN">
+                <viewController id="Zmo-S3-4NJ" customClass="AdLibModal" customModule="iOS_Workshop_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JLE-dy-JKZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="isS-oS-A6c">
-                                <rect key="frame" x="40" y="273" width="335" height="351"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLU-XA-zLs">
+                                <rect key="frame" x="70" y="430" width="274" height="36"/>
+                                <color key="backgroundColor" red="0.49390608070000003" green="0.48637026550000001" blue="0.43724346159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="KIe-3M-0g6"/>
+                                    <constraint firstAttribute="height" constant="36" id="bbx-xw-4A1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="30"/>
+                                <state key="normal" title="Indeed!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeModal:" destination="Zmo-S3-4NJ" eventType="touchUpInside" id="x5R-En-XgC"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.49390608070000003" green="0.48637026550000001" blue="0.43724346159999999" alpha="0.86424405809859151" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="isS-oS-A6c" firstAttribute="centerX" secondItem="EJW-Qd-YyN" secondAttribute="centerX" id="kqZ-wQ-V9n"/>
-                            <constraint firstItem="isS-oS-A6c" firstAttribute="centerY" secondItem="EJW-Qd-YyN" secondAttribute="centerY" id="w30-C3-d20"/>
+                            <constraint firstItem="wLU-XA-zLs" firstAttribute="centerY" secondItem="JLE-dy-JKZ" secondAttribute="centerY" id="3Ow-dd-NQw"/>
+                            <constraint firstItem="wLU-XA-zLs" firstAttribute="centerX" secondItem="JLE-dy-JKZ" secondAttribute="centerX" id="bWA-TN-s5j"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ylV-7u-RNe"/>
+                        <viewLayoutGuide key="safeArea" id="zBM-Wa-Gm1"/>
                     </view>
+                    <connections>
+                        <outlet property="closeButton" destination="wLU-XA-zLs" id="J8P-Ss-WhO"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xmq-UT-CA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vdh-mr-TUD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1711.5942028985507" y="16.741071428571427"/>
+            <point key="canvasLocation" x="1915.9420289855075" y="-29.464285714285712"/>
         </scene>
     </scenes>
     <resources>
