@@ -11,14 +11,18 @@ import UIKit
 class AdLibModal: UIViewController {
 
     @IBOutlet weak var closeButton: UIButton!
+    @IBOutlet weak var Label: UILabel!
+    
+    var labelText = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Label.text = labelText
     }
 
     @IBAction func closeModal(_ sender: UIButton) {
         dismiss(animated: true)
     }
-    
-    
+
 }
