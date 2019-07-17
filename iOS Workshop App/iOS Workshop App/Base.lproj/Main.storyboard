@@ -28,13 +28,14 @@
                                     <constraint firstAttribute="height" constant="36" id="FDx-og-2Th"/>
                                     <constraint firstAttribute="width" constant="274" id="uwx-f0-qe3"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="22"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Show me a picture of a castle">
+                                <state key="normal" title="Show me castles">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mEz-cO-yHm" kind="show" id="p4y-yU-g3L"/>
+                                    <segue destination="YQG-e1-ZUx" kind="show" id="p4y-yU-g3L"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJj-eL-g39">
@@ -44,6 +45,7 @@
                                     <constraint firstAttribute="width" constant="274" id="3uD-Ic-YDp"/>
                                     <constraint firstAttribute="height" constant="36" id="B7F-cd-Wpf"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="22"/>
                                 <state key="normal" title="Dragon Ad Lib">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -100,6 +102,7 @@
                                     <constraint firstAttribute="height" constant="36" id="iab-nM-RzJ"/>
                                     <constraint firstAttribute="width" constant="274" id="kkl-z9-dCI"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="28"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -108,18 +111,45 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="partialCurl" id="B0O-d6-LPI"/>
                                 </connections>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ITQ-AI-emi">
+                                <rect key="frame" x="20" y="130" width="374" height="644"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yxP-07-Qqa">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="cei-Ho-AWb">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.49390608070000003" green="0.48637026550000001" blue="0.43724346159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Nm4-d0-cyf" firstAttribute="centerX" secondItem="lWh-Iz-MwG" secondAttribute="centerX" id="1Ov-2j-UTg"/>
+                            <constraint firstItem="Nm4-d0-cyf" firstAttribute="top" secondItem="ITQ-AI-emi" secondAttribute="bottom" constant="22" id="239-dN-Rug"/>
+                            <constraint firstItem="ITQ-AI-emi" firstAttribute="centerX" secondItem="Nm4-d0-cyf" secondAttribute="centerX" id="Lqb-Ve-74m"/>
+                            <constraint firstItem="ITQ-AI-emi" firstAttribute="leading" secondItem="lWh-Iz-MwG" secondAttribute="leadingMargin" id="V9I-rs-F7a"/>
+                            <constraint firstItem="ITQ-AI-emi" firstAttribute="top" secondItem="GT6-Mb-YCq" secondAttribute="top" constant="42" id="ebe-9L-Afr"/>
                             <constraint firstItem="GT6-Mb-YCq" firstAttribute="bottom" secondItem="Nm4-d0-cyf" secondAttribute="bottom" constant="30" id="uGM-1W-eOM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GT6-Mb-YCq"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Castle Pics" id="6Rs-ie-E5a"/>
+                    <connections>
+                        <outlet property="castleCollectionView" destination="ITQ-AI-emi" id="vJb-nG-qPa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CEA-Dc-stG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1044" y="642"/>
+            <point key="canvasLocation" x="1953.6231884057972" y="641.51785714285711"/>
         </scene>
         <!--Dragon Ad Lib-->
         <scene sceneID="tOC-wP-F1C">
@@ -136,6 +166,7 @@
                                     <constraint firstAttribute="width" constant="274" id="a9I-o0-T9z"/>
                                     <constraint firstAttribute="height" constant="36" id="y02-Jc-yQz"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="28"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -210,6 +241,7 @@
                         <viewLayoutGuide key="safeArea" id="qbU-po-ABw"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="Tlf-PM-KPc" id="70u-2p-n9Q"/>
                         <outlet property="nounLabel" destination="kF0-Uq-177" id="OqM-IC-Mry"/>
                         <outlet property="nounTextField" destination="Mto-Wh-koA" id="Bkf-QZ-tar"/>
                         <outlet property="openCreatedAdLibButton" destination="rl4-kp-B83" id="cU8-ZR-kHm"/>
@@ -273,11 +305,29 @@
             </objects>
             <point key="canvasLocation" x="1915.9420289855075" y="-29.464285714285712"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fia-ey-48A">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YQG-e1-ZUx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f3A-Yf-KsB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mEz-cO-yHm" kind="relationship" relationship="rootViewController" id="b2a-5e-AUa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKx-JO-m9c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043.4782608695652" y="641.51785714285711"/>
+        </scene>
     </scenes>
     <resources>
         <image name="architecture-building-castle-1590882" width="1920" height="2560"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Pfe-9V-63k"/>
+        <segue reference="B0O-d6-LPI"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D215B4222DEB498001A11B9 /* CastleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D215B4022DEB498001A11B9 /* CastleCollectionViewCell.swift */; };
+		7D215B4322DEB498001A11B9 /* CastleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D215B4122DEB498001A11B9 /* CastleCollectionViewCell.xib */; };
 		7DB77BA922DBA87800F2611F /* AdLibModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB77BA822DBA87800F2611F /* AdLibModal.swift */; };
 		7DFD0B8E22DAD89F00E2AF00 /* DragonAdLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFD0B8D22DAD89F00E2AF00 /* DragonAdLib.swift */; };
 		7DFD0B9022DAD8BC00E2AF00 /* CastlePics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFD0B8F22DAD8BC00E2AF00 /* CastlePics.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D215B4022DEB498001A11B9 /* CastleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastleCollectionViewCell.swift; sourceTree = "<group>"; };
+		7D215B4122DEB498001A11B9 /* CastleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastleCollectionViewCell.xib; sourceTree = "<group>"; };
 		7DB77BA822DBA87800F2611F /* AdLibModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdLibModal.swift; sourceTree = "<group>"; };
 		7DFD0B8D22DAD89F00E2AF00 /* DragonAdLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonAdLib.swift; sourceTree = "<group>"; };
 		7DFD0B8F22DAD8BC00E2AF00 /* CastlePics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastlePics.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				8C8AF96622BB371300517C9F /* Assets.xcassets */,
 				8C8AF96822BB371300517C9F /* LaunchScreen.storyboard */,
 				8C8AF96B22BB371300517C9F /* Info.plist */,
+				7D215B4022DEB498001A11B9 /* CastleCollectionViewCell.swift */,
+				7D215B4122DEB498001A11B9 /* CastleCollectionViewCell.xib */,
 			);
 			path = "iOS Workshop App";
 			sourceTree = "<group>";
@@ -238,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D215B4322DEB498001A11B9 /* CastleCollectionViewCell.xib in Resources */,
 				8C8AF96A22BB371300517C9F /* LaunchScreen.storyboard in Resources */,
 				8C8AF96722BB371300517C9F /* Assets.xcassets in Resources */,
 				8C8AF96522BB371100517C9F /* Main.storyboard in Resources */,
@@ -267,6 +274,7 @@
 			files = (
 				7DFD0B8E22DAD89F00E2AF00 /* DragonAdLib.swift in Sources */,
 				8C8AF96222BB371100517C9F /* ViewController.swift in Sources */,
+				7D215B4222DEB498001A11B9 /* CastleCollectionViewCell.swift in Sources */,
 				7DB77BA922DBA87800F2611F /* AdLibModal.swift in Sources */,
 				7DFD0B9022DAD8BC00E2AF00 /* CastlePics.swift in Sources */,
 				8C8AF96022BB371100517C9F /* AppDelegate.swift in Sources */,

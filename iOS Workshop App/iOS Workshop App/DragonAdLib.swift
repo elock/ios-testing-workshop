@@ -15,7 +15,7 @@ class DragonAdLib: UIViewController {
     @IBOutlet weak var nounLabel: UILabel!
     @IBOutlet weak var nounTextField: UITextField!
     @IBOutlet weak var openCreatedAdLibButton: UIButton!
-    
+    @IBOutlet weak var backButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,7 @@ class DragonAdLib: UIViewController {
         verbTextField.resignFirstResponder()
         nounTextField.resignFirstResponder()
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destViewController : AdLibModal = segue.destination as! AdLibModal
         
