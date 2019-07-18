@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7D215B4222DEB498001A11B9 /* CastleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D215B4022DEB498001A11B9 /* CastleCollectionViewCell.swift */; };
 		7D215B4322DEB498001A11B9 /* CastleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D215B4122DEB498001A11B9 /* CastleCollectionViewCell.xib */; };
+		7DA522C822E024AE00C83A95 /* BaseUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA522C722E024AE00C83A95 /* BaseUITest.swift */; };
 		7DB77BA922DBA87800F2611F /* AdLibModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB77BA822DBA87800F2611F /* AdLibModal.swift */; };
 		7DFD0B8E22DAD89F00E2AF00 /* DragonAdLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFD0B8D22DAD89F00E2AF00 /* DragonAdLib.swift */; };
 		7DFD0B9022DAD8BC00E2AF00 /* CastlePics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFD0B8F22DAD8BC00E2AF00 /* CastlePics.swift */; };
@@ -18,7 +19,7 @@
 		8C8AF96722BB371300517C9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8AF96622BB371300517C9F /* Assets.xcassets */; };
 		8C8AF96A22BB371300517C9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C8AF96822BB371300517C9F /* LaunchScreen.storyboard */; };
 		8C8AF97522BB371300517C9F /* iOS_Workshop_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8AF97422BB371300517C9F /* iOS_Workshop_AppTests.swift */; };
-		8C8AF98022BB371300517C9F /* iOS_Workshop_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8AF97F22BB371300517C9F /* iOS_Workshop_AppUITests.swift */; };
+		8C8AF98022BB371300517C9F /* AdLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8AF97F22BB371300517C9F /* AdLibTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		7D215B4022DEB498001A11B9 /* CastleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastleCollectionViewCell.swift; sourceTree = "<group>"; };
 		7D215B4122DEB498001A11B9 /* CastleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastleCollectionViewCell.xib; sourceTree = "<group>"; };
+		7DA522C722E024AE00C83A95 /* BaseUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUITest.swift; sourceTree = "<group>"; };
 		7DB77BA822DBA87800F2611F /* AdLibModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdLibModal.swift; sourceTree = "<group>"; };
 		7DFD0B8D22DAD89F00E2AF00 /* DragonAdLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonAdLib.swift; sourceTree = "<group>"; };
 		7DFD0B8F22DAD8BC00E2AF00 /* CastlePics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastlePics.swift; sourceTree = "<group>"; };
@@ -55,7 +57,7 @@
 		8C8AF97422BB371300517C9F /* iOS_Workshop_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Workshop_AppTests.swift; sourceTree = "<group>"; };
 		8C8AF97622BB371300517C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C8AF97B22BB371300517C9F /* iOS Workshop AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Workshop AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C8AF97F22BB371300517C9F /* iOS_Workshop_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Workshop_AppUITests.swift; sourceTree = "<group>"; };
+		8C8AF97F22BB371300517C9F /* AdLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdLibTests.swift; sourceTree = "<group>"; };
 		8C8AF98122BB371300517C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,7 +136,8 @@
 		8C8AF97E22BB371300517C9F /* iOS Workshop AppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8C8AF97F22BB371300517C9F /* iOS_Workshop_AppUITests.swift */,
+				7DA522C722E024AE00C83A95 /* BaseUITest.swift */,
+				8C8AF97F22BB371300517C9F /* AdLibTests.swift */,
 				8C8AF98122BB371300517C9F /* Info.plist */,
 			);
 			path = "iOS Workshop AppUITests";
@@ -293,7 +296,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C8AF98022BB371300517C9F /* iOS_Workshop_AppUITests.swift in Sources */,
+				7DA522C822E024AE00C83A95 /* BaseUITest.swift in Sources */,
+				8C8AF98022BB371300517C9F /* AdLibTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

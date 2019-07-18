@@ -184,6 +184,7 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="fight, for example" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L8w-ei-nG9">
                                 <rect key="frame" x="69" y="215" width="276" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="verbTextField"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="276" id="j2M-bf-zha"/>
                                 </constraints>
@@ -216,6 +217,7 @@
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="brain, for example" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mto-Wh-koA">
                                 <rect key="frame" x="69" y="396" width="276" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="nounTextField"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="276" id="0Eg-KW-dJp"/>
                                 </constraints>
@@ -329,6 +331,6 @@
         <image name="architecture-building-castle-1590882" width="1920" height="2560"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="B0O-d6-LPI"/>
+        <segue reference="Pfe-9V-63k"/>
     </inferredMetricsTieBreakers>
 </document>
