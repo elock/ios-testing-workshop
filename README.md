@@ -8,6 +8,9 @@ Once XCode is downloaded, clone this project. You can do that from within Xcode 
 
 ```git clone https://github.com/elock/ios-testing-workshop.git```
 
+# Presentation
+You can find the slide deck here: https://docs.google.com/presentation/d/1XRMpKqsoARHMUd3NJHjCu2T8nYS68K05Eqke-JHOuIw/edit#slide=id.g35f391192_017
+
 # Image Credits
 All images in the gallery are from www.unsplash.com. Here are the source links:
 * Tim Rebkavets - https://unsplash.com/photos/B5PNmw5XSpk
